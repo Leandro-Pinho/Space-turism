@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;0,900;1,600&family=Bellefair&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Bellefair', serif;*/
+}
+
+:root {
+    --clr-black: hsl(230, 35%, 7%);
+    --clr-purple: hsl(231, 77%, 90%);
+    --clr-bege: hsl(0, 0%, 100%)
+}
+
+body {
+    display: block;
+    background: url(assets/home/background-home-desktop.jpg);
+    width: 1440px;
+    height: 900px;
+    justify-content: center;
+    
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img {
+    margin: 64px 55px;
+}
+
+.navbar .line {
+    position: absolute;
+    left: 110px;
+    z-index: 1;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0 120px 0 100px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    /* Note: backdrop-filter has minim */
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 35px 25px;
+}
+
+.navbar ul li a span {
+    font-weight: 700;
+}
+
+.navbar ul li a {
+    font-family: 'Barlow Condensed', sans-serif;
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
+.navbar ul li a::after {
+    content: '';
+    width: 0;
+    height: 4px;
+    background: #edebeb;
+    position: absolute;
+    left: 0;
+    bottom: -35px;
+    transition: 0.5s ease;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+.description {
+    position: absolute;
+    width: 450px;
+    height: 382px;
+    left: 165px;
+    top: 387px;
+}
+
+.description h2 {
+    position: absolute;
+    height: 34px;
+    left: 0.11%;
+    right: 15.67%;
+    top: calc(50% - 34px/2 - 174px);
+
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    /* identical to box height */
+
+    letter-spacing: 4.725px;
+
+    color: #D0D6F9;
+}
+
+.description h1 {
+    position: absolute;
+    height: 172px;
+    left: -2%;
+    right: 1.11%;
+    top: calc(50% - 172px/2 - 47px);
+
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 172px;
+    text-transform: uppercase;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.description p {
+
+    position: absolute;
+    height: 128px;
+    left: 0.11%;
+    right: 1.22%;
+    top: calc(50% - 128px/2 + 127px);
+
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    /* or 178% */
+
+
+    color: #D0D6F9;
+}
+
+.btn-explore button {
+    position: absolute;
+    left: 1001px;
+    top: 495px;
+    width: 275px;
+    height: 275px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    font-family: 'Bellefair', sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+
+    box-shadow: 0px 0px 1px 0px rgba(245, 243, 243, 0.5);
+    transition: all 0.5s ease;
+    
+}
+
+.btn-explore button:hover {
+    box-shadow: 0px 0px 1px 100px rgba(255, 255, 255, 0.10);
+}
