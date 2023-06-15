@@ -1,27 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="crew.css">
+
   <title>Frontend Mentor | Space tourism website</title>
 </head>
+
 <body>
+  <header class="navbar">
+    <img src="assets/home/logo.svg" alt="logo">
+    <img class="line" src="assets/home/line.svg" alt="line">
+    <ul>
+      <li><a href="#"><span>00</span> Home</a></li>
+      <li><a href="#"><span>01</span> Destination</a></li>
+      <li><a href="#"><span>02</span> Crew</a></li>
+      <li><a href="#"><span>03</span> Technology</a></li>
+    </ul>
+  </header>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+  <main>
+    <section class="tab-content active-tab" id="douglas">
+      <section class="description">
+        <h3><span>02</span> Meet your crew</h3>
 
-  02 Meet your crew
+        <h2>Commander</h2>
+        <h1>Douglas Hurley</h1>
+        <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
+          and former NASA astronaut. He launched into space for the third time as
+          commander of Crew Dragon Demo-2.</p>
+      </section>
+      <section class="img">
+        <img src="assets/crew/image-douglas-hurley.png" alt="img">
+      </section>
+    </section>
 
-  Commander
-  Douglas Hurley
+    <section class="dots-page">
+      <div class="dot active-link" onclick="opentab('douglas')"></div>
+      <div class="dot" onclick="opentab('mark')"></div>
+      <div class="dot" onclick="opentab('victor')"></div>
+      <div class="dot" onclick="opentab('anousheh')"></div>
+    </section>
 
-  Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
-  and former NASA astronaut. He launched into space for the third time as 
-  commander of Crew Dragon Demo-2.
+    <section class="tab-content mark" id="mark">
+      <section class="description">
+        <h3><span>02</span> Meet your crew</h3>
+
+        <h2>Mission Specialist</h2>
+        <h1>Mark Shuttleworth</h1>
+        <p>Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind
+          the Linux-based Ubuntu operating system. Shuttleworth became the first South
+          African to travel to space as a space tourist.</p>
+      </section>
+      <section class="img">
+        <img src="assets/crew/image-mark-shuttleworth.png" alt="img">
+      </section>
+    </section>
+
+    <section class="tab-content victor" id="victor">
+      <section class="description">
+        <h3><span>02</span> Meet your crew</h3>
+
+        <h2>Pilot</h2>
+        <h1>Victor Glover</h1>
+        <p>Pilot on the first operational flight of the SpaceX Crew Dragon to the
+          International Space Station. Glover is a commander in the U.S. Navy where
+          he pilots an F/A-18.He was a crew member of Expedition 64, and served as a
+          station systems flight engineer.</p>
+      </section>
+      <section class="img">
+        <img src="assets/crew/image-victor-glover.png" alt="img">
+      </section>
+    </section>
+
+    <section class="tab-content anousheh" id="anousheh">
+      <section class="description">
+        <h3><span>02</span> Meet your crew</h3>
+
+        <h2>Flight Engineer</h2>
+        <h1>Anousheh Ansari</h1>
+        <p>Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems.
+          Ansari was the fourth self-funded space tourist, the first self-funded woman to
+          fly to the ISS, and the first Iranian in space.</p>
+      </section>
+      <section class="img">
+        <img src="assets/crew/image-anousheh-ansari.png" alt="img">
+      </section>
+    </section>
+
+  </main>
+
+
+  <script src="crew.js"></script>
 </body>
+
 </html>

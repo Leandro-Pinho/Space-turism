@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;0,900;1,600&family=Bellefair&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Bellefair', serif;*/
+}
+
+:root {
+    --clr-black: hsl(230, 35%, 7%);
+    --clr-purple: hsl(231, 77%, 90%);
+    --clr-bege: hsl(0, 0%, 100%)
+}
+
+body {
+    display: block;
+    background: url(assets/crew/background-crew-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 900px;
+    justify-content: center;
+
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img {
+    margin: 64px 55px;
+}
+
+.navbar .line {
+    position: absolute;
+    width: 475px;
+    left: 110px;
+    z-index: 1;
+}
+
+.navbar ul {
+    list-style: none;
+    width: 930px;
+    padding-left: 80px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    /* Note: backdrop-filter has minim */
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 35px 35px;
+}
+
+.navbar ul li a span {
+    font-weight: 700;
+}
+
+.navbar ul li a {
+    font-family: 'Barlow Condensed', sans-serif;
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
+.navbar ul li a::after {
+    content: '';
+    width: 0;
+    height: 4px;
+    background: #edebeb;
+    position: absolute;
+    left: 0;
+    bottom: -35px;
+    transition: 0.5s ease;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1440px) {
+    .navbar ul {
+        width: 840px;
+        padding-left: 70px;
+    }
+
+    .navbar .line {
+        width: 440px;
+    }
+
+    .navbar li {
+        margin: 35px 25px;
+    }
+}
+
+/* --------------content crew ----------------*/
+
+main .description h3 {
+    position: absolute;
+    height: 34px;
+    left: 165.5px;
+    right: 1.4%;
+    top: 210px;
+
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    /* identical to box height */
+
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+main .description h3 span {
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+main .description h2 {
+    position: absolute;
+    width: 214px;
+    height: 37px;
+    left: 165.5px;
+    top: 400px;
+
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+main .description h1 {
+    position: absolute;
+    width: 488px;
+    height: 64px;
+    left: 165.5px;
+    top: 452px;
+
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+main .description p {
+    position: absolute;
+    width: 444px;
+    height: 128px;
+    left: 165px;
+    top: 543px;
+
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    /* or 178% */
+
+
+    color: #D0D6F9;
+}
+
+
+main .img {
+    position: absolute;
+    width: 503.07px;
+    height: 712px;
+    left: 734.93px;
+    top: 188px;
+}
+
+.dots-page {
+    display: flex;
+    position: absolute;
+    width: 132px;
+    height: 15px;
+    left: 167px;
+    top: 791px;
+    justify-content: space-between;
+}
+
+.dots-page .dot {
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 50%;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.17;
+    cursor: pointer;
+}
+
+.dots-page .dot:hover {
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.dots-page .active-link {
+    background: #ffffff;
+    opacity: 1;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active-tab {
+    display: block;
+}
+
+
+/* ---------style mark -------------*/
+
+
+main .mark .description h2 {
+    position: absolute;
+    width: 309px;
+    height: 37px;
+    left: 165.5px;
+    top: 400px;
+
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+main .mark .description h1 {
+    position: absolute;
+    position: absolute;
+    width: 614px;
+    height: 64px;
+    left: 165.5px;
+    top: 452px;
+
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+
+    color: #FFFFFF;
+}
+
+main .mark .img {
+    position: absolute;
+    width: 453.44px;
+    height: 654px;
+    left: 800px;
+    top: 246px;
+}
+
+/* ---------style victor -------------*/
+
+
+main .victor .description h2 {
+    position: absolute;
+    width: 309px;
+    height: 37px;
+    left: 165.5px;
+    top: 400px;
+
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+main .victor .description h1 {
+    position: absolute;
+    position: absolute;
+    width: 614px;
+    height: 64px;
+    left: 165.5px;
+    top: 452px;
+
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+
+    color: #FFFFFF;
+}
+
+main .victor .img {
+    position: absolute;
+    width: 453.44px;
+    height: 654px;
+    left: 743px;
+    top: 246px;
+}
+
+/* ---------style victor -------------*/
+
+
+main .anousheh .description h2 {
+    position: absolute;
+    width: 309px;
+    height: 37px;
+    left: 165.5px;
+    top: 400px;
+
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+main .anousheh .description h1 {
+    position: absolute;
+    position: absolute;
+    width: 614px;
+    height: 64px;
+    left: 165.5px;
+    top: 452px;
+
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+
+    color: #FFFFFF;
+}
+
+main .anousheh .img {
+    position: absolute;
+    width: 615.57px;
+    height: 607px;
+    left: 735px;
+    top: 294px;
+}
