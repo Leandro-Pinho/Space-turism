@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;0,900;1,600&family=Bellefair&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Bellefair', serif;*/
+}
+
+:root {
+    --clr-black: hsl(230, 35%, 7%);
+    --clr-purple: hsl(231, 77%, 90%);
+    --clr-bege: hsl(0, 0%, 100%)
+}
+
+body {
+    display: block;
+    background: url(assets/destination/background-destination-desktop.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+    justify-content: center;
+
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img {
+    margin: 64px 55px;
+}
+
+.navbar .line {
+    position: absolute;
+    width: 475px;
+    left: 110px;
+    z-index: 1;
+}
+
+.navbar ul {
+    list-style: none;
+    width: 930px;
+    padding-left: 80px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    /* Note: backdrop-filter has minim */
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 35px 35px;
+}
+
+.navbar ul li a span {
+    font-weight: 700;
+}
+
+.navbar ul li a {
+    font-family: 'Barlow Condensed', sans-serif;
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
+.navbar ul li a::after {
+    content: '';
+    width: 0;
+    height: 4px;
+    background: #edebeb;
+    position: absolute;
+    left: 0;
+    bottom: -35px;
+    transition: 0.5s ease;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1440px) {
+    .navbar ul {
+        width: 840px;
+        padding-left: 70px;
+    }
+
+    .navbar .line {
+        width: 440px;
+    }
+
+    .navbar li {
+        margin: 35px 25px;
+    }
+}
+
+/* ------------ main --------------- */
+
+.title-destination h2 {
+    position: absolute;
+    height: 34px;
+    left: 14.14%;
+    right: 1.57%;
+    top: 212px;
+
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    /* identical to box height */
+
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.title-destination span {
+    letter-spacing: 4.725px;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+.title-destination img {
+    position: absolute;
+
+    left: 230px;
+    top: 343px;
+}
+
+/* ------------- place description ------------- */
+
+.place-description {
+    position: absolute;
+    width: 445px;
+    height: 472px;
+    left: 832px;
+    top: 310px;
+}
+
+.links ul {
+    position: absolute;
+    list-style: none;
+    text-transform: uppercase;
+    left: 832px;
+    top: 310px;
+    z-index: 10;
+}
+
+.links li {
+    display: inline-block;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+.links ul li a {
+    position: relative;
+    height: 19px;
+    left: 0;
+    right: 1.4%;
+    top: calc(50% - 19px/2 - 7.5px);
+
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-decoration: none;
+
+    color: #D0D6F9;
+}
+
+.links ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #888787;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    transition: 0.5s ease;
+}
+
+.links ul li a:hover::after {
+    width: 100%;
+}
+
+.links .active-link::after {
+    width: 100%;
+    background: #ffffff;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active-tab {
+    display: block;
+}
+
+.place-description h1 {
+    position: absolute;
+    height: 115px;
+    left: 0.11%;
+    right: 25.06%;
+    top: calc(50% - 115px/2 - 107.5px);
+
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 115px;
+    text-transform: uppercase;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.place-description p {
+    position: absolute;
+    height: 128px;
+    left: 0%;
+    right: 0.22%;
+    top: calc(50% - 128px/2 + 28px);
+
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    /* or 178% */
+
+
+    color: #D0D6F9;
+}
+
+.place-description #line {
+    position: absolute;
+    left: 0.22%;
+    right: 0%;
+    top: 80.93%;
+    bottom: 18.86%;
+
+    background: #383B4B;
+}
+
+.travel-description h4 {
+    position: absolute;
+    height: 17px;
+    left: 0%;
+    right: 32.17%;
+    bottom: 40px;
+
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+
+    color: #D0D6F9;
+}
+
+.travel-description h3 {
+    position: absolute;
+    height: 32px;
+    left: 0%;
+    right: 0%;
+    bottom: 0px;
+
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.travel-time h4 {
+    position: absolute;
+    height: 17px;
+    right: 18.8%;
+    bottom: 40px;
+
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+
+    color: #D0D6F9;
+}
+
+.travel-time h3 {
+    position: absolute;
+    height: 32px;
+    right: 25.41%;
+    bottom: 0;
+
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.travel-time #mars {
+    position: absolute;
+    height: 32px;
+    right: 14%;
+    bottom: 0;
+
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.travel-time #europa {
+    position: absolute;
+    height: 32px;
+    right: 23%;
+    bottom: 0;
+
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.travel-time #titan {
+    position: absolute;
+    height: 32px;
+    right: 23%;
+    bottom: 0;
+
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
