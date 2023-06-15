@@ -175,7 +175,8 @@ body {
     color: #D0D6F9;
 }
 
-.btn-explore button {
+.btn-explore a {
+    display: flex;
     position: absolute;
     right: 180px;
     top: 495px;
@@ -184,6 +185,11 @@ body {
     border: none;
     border-radius: 50%;
     cursor: pointer;
+    background: #ffffff;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--clr-black);
 
     font-family: 'Bellefair', sans-serif;
     font-size: 32px;
@@ -191,9 +197,8 @@ body {
 
     box-shadow: 0px 0px 1px 0px rgba(245, 243, 243, 0.5);
     transition: all 0.5s ease;
-
 }
 
-.btn-explore button:hover {
+.btn-explore a:hover {
     box-shadow: 0px 0px 1px 100px rgba(255, 255, 255, 0.10);
 }
