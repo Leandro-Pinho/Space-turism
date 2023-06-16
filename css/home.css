@@ -202,3 +202,97 @@ body {
 .btn-explore a:hover {
     box-shadow: 0px 0px 1px 100px rgba(255, 255, 255, 0.10);
 }
+
+/* --------- configuração da screen 770px ----------- */
+@media only screen and (max-width: 770px) {
+
+    body {
+        background: url(../assets/home/background-home-tablet.jpg);
+        background-size: cover;
+        height: 1024px;
+    }
+
+    /* ---------- nav --------------- */
+    .navbar img {
+        margin: 24px 39px;
+    }
+
+    .navbar .line {
+        display: none;
+    }
+
+    .navbar ul {
+        width: 450px;
+        padding-left: 20px;
+    }
+
+    .navbar li {
+        margin: 40px 15px;
+    }
+
+    .navbar li span {
+        display: none;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+    /* ----------- content home ------------ */
+    .description {
+        position: absolute;
+        width: 450px;
+        height: 334px;
+        left: 159px;
+        top: 202px;
+    }
+
+    .description h2 {
+        position: absolute;
+        height: 24px;
+        left: 20%;
+        right: 18.78%;
+        top: calc(50% - 24px/2 - 155px);
+
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+
+        text-align: center;
+        letter-spacing: 3.375px;
+    }
+
+    .description h1 {
+        position: absolute;
+        height: 150px;
+        left: 0%;
+        right: 1.11%;
+        top: calc(50% - 150px/2 - 44px);
+
+        font-size: 150px;
+        line-height: 150px;
+    }
+
+    .description p {
+        position: absolute;
+        height: 112px;
+        left: 0.67%;
+        right: 0.67%;
+        top: calc(50% - 112px/2 + 111px);
+
+        font-size: 16px;
+        line-height: 28px;
+
+        text-align: center;  
+    }
+
+    .btn-explore a {
+        position: absolute;
+        left: 263px;
+        top: 692px;
+    }
+
+    .btn-explore a:hover {
+        box-shadow: 0px 0px 1px 60px rgba(255, 255, 255, 0.10);
+    }
+}
