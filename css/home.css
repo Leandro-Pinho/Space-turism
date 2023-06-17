@@ -214,7 +214,7 @@ body {
 
     /* ---------- nav --------------- */
     .navbar img {
-        margin: 24px 39px;
+        margin: 20px 39px;
     }
 
     .navbar .line {
@@ -227,7 +227,7 @@ body {
     }
 
     .navbar li {
-        margin: 40px 15px;
+        margin: 35px 15px;
     }
 
     .navbar li span {
@@ -288,7 +288,7 @@ body {
 
     .btn-explore a {
         position: absolute;
-        left: 263px;
+        left: 243px;
         top: 692px;
     }
 

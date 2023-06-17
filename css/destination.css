@@ -132,7 +132,7 @@ body {
 
 .title-destination span {
     letter-spacing: 4.725px;
-
+    font-weight: 700;
     color: #FFFFFF;
 
     mix-blend-mode: normal;
@@ -392,4 +392,164 @@ body {
     text-transform: uppercase;
 
     color: #FFFFFF;
+}
+
+/* --------- configuração da screen 770px ----------- */
+@media only screen and (max-width: 770px) {
+
+    body {
+        background: url(../assets/destination/background-destination-tablet.jpg);
+        background-size: cover;
+        height: 1024px;
+    }
+
+    /* ---------- nav --------------- */
+    .navbar img {
+        margin: 20px 39px;
+    }
+
+    .navbar .line {
+        display: none;
+    }
+
+    .navbar ul {
+        width: 450px;
+        padding-left: 20px;
+    }
+
+    .navbar li {
+        margin: 35px 15px;
+    }
+
+    .navbar li span {
+        display: none;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+    /* ------------ content destination ---------- */
+    .title-destination h2 {
+        position: absolute;
+        left: 39px;
+        top: 136px;
+
+        font-size: 18px;
+        line-height: 24px;
+        /* identical to box height */
+
+        letter-spacing: 3.375px;
+        text-transform: uppercase;
+    }
+
+    .title-destination img {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: 234px;
+        top: 220px;
+    }
+
+    /* ------------- place description ------------- */
+
+    .links ul {
+        position: absolute;
+        width: 395.5px;
+        height: 34px;
+        left: 241px;
+        top: 573px;
+    }
+
+    .place-description {
+        position: absolute;
+        width: 565px;
+        height: 672px;
+        left: 150px;
+        top: 310px;
+    }
+
+    .place-description h1 {
+        position: absolute;
+        width: 266px;
+        height: 92px;
+        left: 101.5px;
+        top: 339px;
+
+        font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 92px;
+        /* identical to box height */
+
+        text-align: center;
+    }
+
+    .place-description p {
+      
+        width: 573px;
+        height: 84px;
+        left: -60px;
+        top: 439px;
+
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        /* or 175% */
+
+        text-align: center;
+    }
+
+    .place-description #line {
+        position: absolute;
+        left: -10%;
+        right: 10%;
+        top: 85.93%;
+        bottom: 13.86%;
+
+        background: #383B4B;
+    }
+
+    .travel-description h4 {
+        left: 0;
+        right: 65.87%;
+
+        text-align: center;
+    }
+
+    .travel-description h3 {
+        left: 0;
+        right: 65.87%;
+
+        text-align: center;
+    }
+
+    .travel-time h4 {
+        left: 51.05%;
+        right: 20.03%;
+
+        text-align: center;
+    }
+
+    .travel-time h3 {
+        left: 51.05%;
+        right: 20.03%;
+
+        text-align: center;
+    }
+
+    .travel-time #mars {
+        right: 20%;
+    }
+
+    .travel-time #europa {
+        right: 21%;
+    }
+
+    .travel-time #titan {
+        right: 21%;    
+    }
 }

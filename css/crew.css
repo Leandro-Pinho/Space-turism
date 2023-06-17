@@ -402,3 +402,40 @@ main .anousheh .img {
     left: 735px;
     top: 294px;
 }
+
+
+/* --------- configuração da screen 770px ----------- */
+@media only screen and (max-width: 770px) {
+
+    body {
+        background: url(../assets/home/background-home-tablet.jpg);
+        background-size: cover;
+        height: 1024px;
+    }
+
+    /* ---------- nav --------------- */
+    .navbar img {
+        margin: 20px 39px;
+    }
+
+    .navbar .line {
+        display: none;
+    }
+
+    .navbar ul {
+        width: 450px;
+        padding-left: 20px;
+    }
+
+    .navbar li {
+        margin: 35px 15px;
+    }
+
+    .navbar li span {
+        display: none;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+}
