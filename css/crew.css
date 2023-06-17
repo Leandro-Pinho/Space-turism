@@ -204,7 +204,7 @@ main .description p {
 }
 
 
-main .img {
+main img {
     position: absolute;
     width: 503.07px;
     height: 712px;
@@ -295,7 +295,7 @@ main .mark .description h1 {
     color: #FFFFFF;
 }
 
-main .mark .img {
+main .mark img {
     position: absolute;
     width: 453.44px;
     height: 654px;
@@ -345,9 +345,9 @@ main .victor .description h1 {
     color: #FFFFFF;
 }
 
-main .victor .img {
+main .victor img {
     position: absolute;
-    width: 453.44px;
+    width: 553.44px;
     height: 654px;
     left: 743px;
     top: 246px;
@@ -395,7 +395,7 @@ main .anousheh .description h1 {
     color: #FFFFFF;
 }
 
-main .anousheh .img {
+main .anousheh img {
     position: absolute;
     width: 615.57px;
     height: 607px;
@@ -408,7 +408,7 @@ main .anousheh .img {
 @media only screen and (max-width: 770px) {
 
     body {
-        background: url(../assets/home/background-home-tablet.jpg);
+        background: url(../assets/crew/background-crew-tablet.jpg);
         background-size: cover;
         height: 1024px;
     }
@@ -437,5 +437,261 @@ main .anousheh .img {
 
     .navbar ul li a {
         font-size: 14px;
+    }
+
+    /* --------------content crew ----------------*/
+
+    main .description h3 {
+        left: 39px;
+        top: 136px;
+
+        font-size: 20px;
+    }
+
+    main .description h3 span {
+        font-size: 22px;
+    }
+
+    main .description h2 {
+        position: absolute;
+        height: 28px;
+        left: 36.42%;
+        right: 32.42%;
+        top: calc(50% - 28px/2 - 77px);
+
+        font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        /* identical to box height */
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+
+    main .description h1 {
+        position: absolute;
+        height: 46px;
+        left: 18.42%;
+        right: 32.42%;
+        top: calc(50% - 46px/2 - 32px);
+
+        font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 46px;
+        /* identical to box height */
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+
+    main .description p {
+        position: absolute;
+        height: 84px;
+        left: 21%;
+        right: 0%;
+        top: calc(50% - 84px/2 + 49px);
+
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        /* or 175% */
+
+        text-align: center;
+
+        color: #D0D6F9;
+    }
+
+
+    main img {
+        position: absolute;
+        width: 406.37px;
+        height: 522px;
+        left: 175.85px;
+        top: 502px;
+    }
+
+    .dots-page {
+        width: 90px;
+        left: 327px;
+        top: 491px;
+    }
+
+    .dots-page .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+
+    /* ---------style mark -------------*/
+
+    main .mark .description h2 {
+        position: absolute;
+        height: 28px;
+        left: 29.69%;
+        right: 27.69%;
+        top: calc(50% - 28px/2 - 77px);
+
+        font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        /* identical to box height */
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+
+    main .mark .description h1 {
+        position: absolute;
+        height: 46px;
+        left: 9.06%;
+        right: 6.06%;
+        top: calc(50% - 46px/2 - 32px);
+
+        font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 46px;
+        /* identical to box height */
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+
+    main .mark img {
+        position: absolute;
+        width: 308.85px;
+        height: 492px;
+        left: 200px;
+        top: 532px;
+
+    }
+
+    /* ---------style victor -------------*/
+
+
+    main .victor .description h2 {
+        position: absolute;
+        height: 28px;
+        left: 29.43%;
+        right: 44.43%;
+        top: calc(50% - 28px/2 - 77px);
+
+        font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        /* identical to box height */
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+
+    main .victor .description h1 {
+        position: absolute;
+        height: 46px;
+        left: 9.6%;
+        right: 11.4%;
+        top: calc(50% - 46px/2 - 32px);
+
+        font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 46px;
+        /* identical to box height */
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+
+    main .victor img {
+        width: 413.09px;
+        height: 492px;
+        left: 166px;
+        top: 532px;
+    }
+
+    /* ---------style victor -------------*/
+
+    main .anousheh .description h2 {
+        position: absolute;
+        height: 28px;
+        left: 28.88%;
+        right: 30.88%;
+        top: calc(50% - 28px/2 - 77px);
+
+        font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        /* identical to box height */
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+
+    main .anousheh .description h1 {
+        position: absolute;
+        height: 46px;
+        left: 9.37%;
+        right: 7.37%;
+        top: calc(50% - 46px/2 - 32px);
+        
+        font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 46px;
+        /* identical to box height */
+        
+        text-align: center;
+        text-transform: uppercase;
+        
+        color: #FFFFFF;
+    }
+
+    main .anousheh img {
+        position: absolute;
+        width: 500.51px;
+        height: 492px;
+        left: 134px;
+        top: 532px;
     }
 }
