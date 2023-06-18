@@ -35,6 +35,10 @@ body {
     margin: 64px 55px;
 }
 
+.navbar .fas {
+    display: none;
+}
+
 .navbar .line {
     position: absolute;
     width: 475px;
@@ -487,7 +491,7 @@ body {
     }
 
     .place-description p {
-      
+
         width: 573px;
         height: 84px;
         left: -60px;
@@ -550,6 +554,185 @@ body {
     }
 
     .travel-time #titan {
-        right: 21%;    
+        right: 21%;
     }
+}
+
+/* --------- configuração da screen 770px ----------- */
+@media only screen and (max-width: 380px) {
+    body {
+        background: url(../assets/destination/background-destination-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 850px;
+    }
+
+    /* ---------- nav --------------- */
+    .navbar img {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 0;
+        top: 24px;
+    }
+
+    .navbar ul {
+        position: fixed;
+        width: 254px;
+        height: 100vh;
+        right: -0px;
+        top: 0px;
+        padding-top: 100px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    .navbar .fas.fa-bars {
+        position: absolute;
+        left: 300px;
+        top: 43.95px;
+    }
+
+    .navbar .fas {
+        display: block;
+        font-size: 35px;
+        color: #FFFFFF;
+        position: absolute;
+        left: 180px;
+        top: 43.95px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .navbar li {
+        margin: 35px 5px;
+        display: block;
+    }
+
+    .navbar li span {
+        display: inline-block;
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+    }
+
+    .navbar ul li a::after {
+        display: none;
+    }
+
+    /* ------------ content destination ---------- */
+    .title-destination h2 {
+        left: 76px;
+        top: 108px;
+
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+
+        letter-spacing: 2.7px;
+    }
+
+    .title-destination img {
+        width: 170px;
+        height: 170px;
+        left: 103px;
+        top: 159px;
+    }
+
+    /* ------------- place description ------------- */
+
+    .links ul {
+        width: 300px;
+        height: 28px;
+        left: 60px;
+        top: 355px;
+    }
+
+    .links ul li a {
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+    
+        letter-spacing: 2.3625px;
+    }
+
+    .place-description {
+        width: 365px;
+        left: 0;
+        top: 0px;
+    }
+
+    .place-description h1 {
+        position: absolute;
+        width: 187px;
+        height: 64px;
+        left: 94.5px;
+        top: 403px;
+
+        font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 64px;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+
+    .place-description p {
+        position: absolute;
+        width: 327px;
+        height: 125px;
+        left: 24px;
+        top: 473px;
+
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        /* or 167% */
+
+        text-align: center;
+
+        color: #D0D6F9;
+    }
+
+    .place-description #line {
+        width: 327px;
+        height: 1px;
+        left: 24px;
+        top: 615px;
+    }
+
+    .travel-description h4 {   
+        left: 120px;  
+        right: 100px;
+        top: 640px;
+    }
+
+    .travel-description h3 {
+        left: 100px;  
+        right: 80px;
+        top: 670px;
+        font-size: 28px;
+    }
+
+    .travel-time h4 {
+        left: 120px;  
+        right: 100px;
+        top: 730px; 
+    }
+
+    .travel-time h3 {
+        left: 90px;  
+        right: 80px;
+        top: 760px; 
+    }
+
+    .travel-time #mars {
+        right: 20%;
+    }
+
 }

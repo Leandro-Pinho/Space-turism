@@ -372,59 +372,27 @@ body {
     }
 
     .description h2 {
-        position: absolute;
-        height: 19px;
         left: 16.82%;
         right: 15.82%;
         top: calc(50% - 19px/2 - 128.5px);
 
-        font-family: 'Barlow Condensed';
-        font-style: normal;
-        font-weight: 400;
         font-size: 16px;
         line-height: 19px;
         text-align: center;
         letter-spacing: 2.7px;
-
-        color: #D0D6F9;
     }
 
     .description h1 {
-        position: absolute;
-        height: 100px;
-        left: 0%;
-        right: 0%;
         top: calc(50% - 100px/2 - 53px);
-
-        font-family: 'Bellefair';
-        font-style: normal;
-        font-weight: 400;
         font-size: 80px;
         line-height: 100px;
-        /* identical to box height, or 125% */
-
+        
         text-align: center;
-
-        color: #FFFFFF;
     }
 
     .description p {
-        position: absolute;
-        height: 125px;
-        left: 0%;
-        right: 0%;
         top: calc(50% - 125px/2 + 75.5px);
-
-        font-family: 'Barlow';
-        font-style: normal;
-        font-weight: 400;
         font-size: 15px;
-        line-height: 25px;
-        /* or 167% */
-
-        text-align: center;
-
-        color: #D0D6F9;
     }
 
     .btn-explore a {
@@ -433,10 +401,6 @@ body {
         height: 150px;
         left: 113px;
         top: 480px;
-    }
-
-    .btn-explore a:hover {
-        box-shadow: 0px 0px 1px 60px rgba(255, 255, 255, 0.10);
     }
 
 }
