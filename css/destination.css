@@ -580,7 +580,7 @@ body {
         position: fixed;
         width: 254px;
         height: 100vh;
-        right: -0px;
+        right: -254px;
         top: 0px;
         padding-top: 100px;
         z-index: 2;

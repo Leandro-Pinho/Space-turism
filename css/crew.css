@@ -36,6 +36,10 @@ body {
     margin: 64px 55px;
 }
 
+.navbar .fas {
+    display: none;
+}
+
 .navbar .line {
     position: absolute;
     width: 475px;
@@ -403,6 +407,10 @@ main .anousheh img {
     top: 294px;
 }
 
+.description #line {
+    display: none;
+}
+
 
 /* --------- configuração da screen 770px ----------- */
 @media only screen and (max-width: 770px) {
@@ -589,4 +597,217 @@ main .anousheh img {
         left: 134px;
         top: 532px;
     }
+}
+
+/* --------- configuração da screen 770px ----------- */
+@media only screen and (max-width: 380px) {
+    body {
+        background: url(../assets/crew/background-crew-mobile.jpg);
+        background-size: cover;
+        height: 710px;
+    }
+
+    /* ---------- nav --------------- */
+    .navbar img {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 0;
+        top: 24px;
+    }
+
+    .navbar ul {
+        position: fixed;
+        width: 254px;
+        height: 100vh;
+        right: -254px;
+        top: 0px;
+        padding-top: 100px;
+        z-index: 1;
+        transition: right 0.5s;
+    }
+
+    .navbar .fas.fa-bars {
+        position: absolute;
+        left: 300px;
+        top: 43.95px;
+    }
+
+    .navbar .fas {
+        display: block;
+        font-size: 35px;
+        color: #FFFFFF;
+        position: absolute;
+        left: 180px;
+        top: 43.95px;
+        cursor: pointer;
+    }
+
+    .navbar li {
+        margin: 35px 5px;
+        display: block;
+    }
+
+    .navbar li span {
+        display: inline-block;
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+    }
+
+    .navbar ul li a::after {
+        display: none;
+    }
+
+    /* --------------content crew ----------------*/
+
+    main .description h3 {
+        left: 85px;
+        top: 98px;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+
+        font-size: 20px;
+    }
+
+    main img {
+        width: 227px;
+        height: 253px;
+        left: 84px;
+        top: 139px;
+    }
+
+    .dots-page {
+        width: 88px;
+        height: 10px;
+        left: 142px;
+        top: 414px;
+    }
+
+    main .description h2 {
+        position: absolute;
+        height: 18px;
+        left: 21.64%;
+        top: 446px;
+
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    main .description h1 {
+        left: 9.8%;
+        top: 472px;
+        width: 300px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    main .description p {
+        width: 330px;
+        height: 100px;
+        left: 6%;
+        right: 0%;
+        top: 506px;
+
+        font-size: 15px;
+        line-height: 25px;
+
+        text-align: center;
+    }
+
+    .description #line {
+        display: block;
+        position: absolute;
+        width: 307px;
+        height: 1px;
+        left: 34px;
+        top: 392px;
+        background: #383B4B;
+    }
+
+    /* ---------style mark -------------*/
+
+    main .mark .description h2 {
+        left: 8.64%;
+        top: 436px;
+
+        font-size: 16px;
+
+        text-align: center;
+    }
+
+    main .mark .description h1 {
+        left: 9%;
+        top: 472px;
+        width: 300px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    main .mark img {
+        width: 153.92px;
+        height: 222px;
+        left: 111px;
+        top: 170px;
+    }
+
+    main .mark .description p {
+        left: 6%;
+    }
+
+    /* ---------style victor -------------*/
+
+
+    main .victor .description h2 {
+        left: 8.64%;
+        top: 436px;
+
+        font-size: 16px;
+
+        text-align: center;
+    }
+
+    main .victor .description h1 {
+        left: 9%;
+        top: 472px;
+        width: 300px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    main .victor img {
+        width: 190.92px;
+        height: 222px;
+        left: 91px;
+        top: 170px;
+    }
+
+    /* ---------style anousheh -------------*/
+
+    main .anousheh .description h2 {
+        left: 8.64%;
+        top: 436px;
+
+        font-size: 16px;
+
+        text-align: center;
+    }
+
+    main .anousheh .description h1 {
+        left: 9%;
+        top: 472px;
+        width: 300px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    main .anousheh img {
+        width: 190.92px;
+        height: 222px;
+        left: 91px;
+        top: 170px;
+    }
+
 }
