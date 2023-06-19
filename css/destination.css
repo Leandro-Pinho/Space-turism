@@ -166,7 +166,7 @@ body {
     text-transform: uppercase;
     left: 832px;
     top: 310px;
-    z-index: 10;
+    z-index: 1;
 }
 
 .links li {
@@ -647,6 +647,7 @@ body {
         height: 28px;
         left: 60px;
         top: 355px;
+        
     }
 
     .links ul li a {
@@ -670,9 +671,7 @@ body {
         left: 94.5px;
         top: 403px;
 
-        font-family: 'Bellefair';
-        font-style: normal;
-        font-weight: 400;
+   
         font-size: 56px;
         line-height: 64px;
         text-align: center;
@@ -687,9 +686,6 @@ body {
         left: 24px;
         top: 473px;
 
-        font-family: 'Barlow';
-        font-style: normal;
-        font-weight: 400;
         font-size: 15px;
         line-height: 25px;
         /* or 167% */

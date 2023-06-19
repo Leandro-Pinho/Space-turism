@@ -32,6 +32,10 @@ body {
     align-items: center;
 }
 
+.navbar .fas {
+    display: none;
+}
+
 .navbar img {
     margin: 64px 55px;
 }
@@ -411,5 +415,152 @@ main .dot:hover {
     main .dot {
         width: 60px;
         height: 60px;
+    }
+}
+
+/* --------- configuração da screen 770px ----------- */
+@media only screen and (max-width: 380px) {
+    body {
+        background: url(../assets/technology/background-technology-mobile.jpg);
+        background-size: cover;
+        height: 710px;
+    }
+
+    /* ---------- nav --------------- */
+    .navbar img {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 0;
+        top: 24px;
+    }
+
+    .navbar ul {
+        position: fixed;
+        width: 254px;
+        height: 100vh;
+        right: -254px;
+        top: 0px;
+        padding-top: 100px;
+        z-index: 1;
+        transition: right 0.5s;
+    }
+
+    .navbar .fas.fa-bars {
+        position: absolute;
+        left: 300px;
+        top: 43.95px;
+    }
+
+    .navbar .fas {
+        display: block;
+        font-size: 35px;
+        color: #FFFFFF;
+        position: absolute;
+        left: 180px;
+        top: 43.95px;
+        cursor: pointer;
+    }
+
+    .navbar li {
+        margin: 35px 5px;
+        display: block;
+    }
+
+    .navbar li span {
+        display: inline-block;
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+    }
+
+    .navbar ul li a::after {
+        display: none;
+    }
+
+    /* -------------- content technology ------------- */
+
+    main .content h2 {
+        width: 276px;
+        height: 19px;
+        left: 70px;
+        top: 118px;
+    }
+
+    main .content h2 span {
+        font-size: 21px;
+    }
+
+    main .content .description {
+        position: absolute;
+        width: 350px;
+        height: 220px;
+        left: 5px;
+        top: 460px;
+    }
+
+    main .content .description h4 {
+        left: 105px;
+        right: 0;
+        top: 0px;
+    }
+
+    main .content .description h1 {
+        font-size: 24px;
+        top: 15px;
+    }
+
+    main .content .description p {
+        left: 4%;
+        right: 0%;
+        top: 65px;
+        
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .image {
+        position: absolute;
+        background-image: url(../assets/technology/image-launch-vehicle-landscape.jpg);
+        background-size: cover;
+        width: 380px;
+        height: 170px;
+        left: 0px;
+        top: 169px;
+    }
+
+    .image1 {
+        position: absolute;
+        background-image: url(../assets/technology/image-spaceport-landscape.jpg);
+        background-size: cover;
+        width: 380px;
+        height: 170px;
+        left: 0px;
+        top: 169px;
+    }
+
+    .image2 {
+        position: absolute;
+        background-image: url(../assets/technology/image-space-capsule-landscape.jpg);
+        background-size: cover;
+        width: 380px;
+        height: 170px;
+        left: 0px;
+        top: 169px;
+    }
+
+    main .links {
+        width: 160px;
+        height: 60px;
+        left: 105px;
+        top: 376px;
+        flex-direction: row;
+    }
+
+    main .dot {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
     }
 }
